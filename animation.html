@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width:100%;
+            text-align: center;
+        }
+        
+
+        .one{
+            padding: 20px;
+        img:hover{
+            animation-name: rotateImg;
+            animation-duration: 4s;
+            animation-iteration-count:2 ;
+            animation-timing-function: ease-in-out;
+            animation-direction: alternate;
+    
+        }
+    }
+    .two{
+        img:hover{
+            animation-name: rotateImgback;
+            animation-duration: 4s;
+            animation-timing-function:ease-in-out;
+            animation-iteration-count: 2;
+            animation-direction: alternate
+        }
+    }
+    .three{
+        img:hover{
+            animation-name: rotateImgdown;
+            animation-duration: 4s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: 2;
+            animation-direction: alternate;
+
+        }
+    }
+
+
+        
+        h2{
+            animation-name: moving;
+
+        }
+
+         @keyframes rotateImg{
+
+            30%{
+                
+                transform: translateX(30px) rotate(30deg);
+                transition: all 4s linear 0;
+            }
+            100%{
+                
+                transform: translateX(360px) rotate(360deg);
+                transition: all 0s linear 0;
+            }
+        }
+        
+        
+
+        
+            @keyframes rotateImgback{
+
+                30%{
+                    transform: translatex(-30px) rotate(-30deg);
+                    transition: all 0s linear 0;
+                }
+                100%{
+                    transform: translateX(-360px) rotate(-360deg);
+                transition: all 0s linear 0;
+                }
+            }
+            @keyframes rotateImgdown{
+                30%{
+                    transform: translatey(30px) rotate(30deg);
+                    transition:all 0s linear 0 ;
+                }
+                100%{
+                    transform: translatey(360px) rotate(360deg);
+                    transition:all 0s linear 0 ;
+                }
+            }
+
+            
+        
+
+        
+        </style>
+</head>
+<body>
+  <h3>  Hover over the images to see rolling and roll-back animations</h3>
+    <table border="1" cellpadding="1" cellspacing="0">
+        <tr>
+            <td>Image1</td>
+
+    <td class="one">
+    <img src="https://placehold.jp/150x150.png"></td>
+    </tr>
+    <tr>
+        <td>Image2</td>
+        <td class="two">
+        <img src="https://placehold.jp/150x150.png"></td>
+        </tr>
+        <tr>
+        <td>Image3</td>
+        <td class="three">
+            <img src="https://placehold.jp/150x150.png"></td>
+            </tr>
+    <table>
+</body>
+</html>
